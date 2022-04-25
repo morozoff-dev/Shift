@@ -1,0 +1,8 @@
+# ninja log v5
+4	448	6725936024425665	CMakeFiles/great_project.dir/exec_db_func.cpp.obj	25983bc0897a8c80
+3	502	6725953287461929	CMakeFiles/great_project.dir/main.cpp.obj	26fa2ebd87c8f1c6
+3	5458	6708735038757434	CMakeFiles/great_project.dir/sqlite3.c.obj	1b56ec7b944b330f
+502	684	6725953289169148	great_project.exe	5c1ea729e03f2e31
+1	233	6725969378353136	build.ninja	cace2b66eb8041d1
+38	675	6724921385714311	CMakeFiles/great_project.dir/teacher.cpp.obj	ea26ab0eded97905
+8	426	6725953286660111	CMakeFiles/great_project.dir/alg_funcs.cpp.obj	ef081d35d6f1b753
