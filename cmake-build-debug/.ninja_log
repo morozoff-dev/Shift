@@ -1,8 +1,20 @@
 # ninja log v5
-4	448	6725936024425665	CMakeFiles/great_project.dir/exec_db_func.cpp.obj	25983bc0897a8c80
 3	502	6725953287461929	CMakeFiles/great_project.dir/main.cpp.obj	26fa2ebd87c8f1c6
 3	5458	6708735038757434	CMakeFiles/great_project.dir/sqlite3.c.obj	1b56ec7b944b330f
 502	684	6725953289169148	great_project.exe	5c1ea729e03f2e31
-1	233	6725969378353136	build.ninja	cace2b66eb8041d1
+1	233	6726084375540323	build.ninja	cace2b66eb8041d1
 38	675	6724921385714311	CMakeFiles/great_project.dir/teacher.cpp.obj	ea26ab0eded97905
 8	426	6725953286660111	CMakeFiles/great_project.dir/alg_funcs.cpp.obj	ef081d35d6f1b753
+30	551	6726086411000700	CMakeFiles/great_project.dir/teacher.cpp.obj	72b1aa64ff7a595a
+22	632	6726086411782220	CMakeFiles/great_project.dir/alg_funcs.cpp.obj	7b077de81ecc5ead
+52	653	6726086411942604	CMakeFiles/great_project.dir/myNoSelect.cpp.obj	2f323a3c01f49c02
+42	695	6726086412411546	CMakeFiles/great_project.dir/mySelect.cpp.obj	47ad2a573b85347d
+13	777	6726086413353264	CMakeFiles/great_project.dir/main.cpp.obj	70cb7d3c725ee61d
+4	5401	6726086459345451	CMakeFiles/great_project.dir/sqlite3.c.obj	4cee935d80340afe
+5401	5615	6726086461542330	great_project.exe	323489f088491362
+3	407	6726087535561008	CMakeFiles/great_project.dir/main.cpp.obj	70cb7d3c725ee61d
+16	460	6726087841493317	CMakeFiles/great_project.dir/myNoSelect.cpp.obj	2f323a3c01f49c02
+12	471	6726087841649731	CMakeFiles/great_project.dir/alg_funcs.cpp.obj	7b077de81ecc5ead
+8	527	6726087842118472	CMakeFiles/great_project.dir/mySelect.cpp.obj	47ad2a573b85347d
+3	563	6726087842591288	CMakeFiles/great_project.dir/main.cpp.obj	70cb7d3c725ee61d
+563	746	6726087844354977	great_project.exe	323489f088491362

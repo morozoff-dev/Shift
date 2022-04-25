@@ -31,4 +31,3 @@ float Teacher::getEasiness() const {
 const string &Teacher::getWmLink() const {
     return wmLink;
 }
-

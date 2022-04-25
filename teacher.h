@@ -29,7 +29,4 @@ private:
     string wmLink;
 };
 
-
-
-
 #endif //GREAT_PROJECT_TEACHER_H

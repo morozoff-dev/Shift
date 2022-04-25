@@ -3,17 +3,9 @@
 //
 #include <cstdio>
 #include "sqlite3.h"
-#include "exec_db_func.h"
+#include "dbFuncs.h"
 #include <vector>
 
-/* static int callback(void *NotUsed, int argc, char **argv, char **azColName){
-    int i;
-    for(i=0; i<argc; i++){
-        printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
-    }
-    printf("\n");
-    return 0;
-} */
 static int callback(void *dataPtr, int argc, char **argv, char **azColName){
     auto vec = static_cast<std::vector<std::pair<std::string, std::string>>*>(dataPtr);
     int i;
@@ -23,11 +15,10 @@ static int callback(void *dataPtr, int argc, char **argv, char **azColName){
     return 0;
 }
 
-void my_exec(const char * sql, std::vector<std::pair<std::string, std::string>> & vec) {
+void mySelect(const char * sql, std::vector<std::pair<std::string, std::string>> & vec) {
     sqlite3 *db;
     char *zErrMsg = nullptr;
     int rc;
-    //char * sql;
 
 /* Open database */
     rc = sqlite3_open("data_base.db", &db);
@@ -42,8 +33,6 @@ void my_exec(const char * sql, std::vector<std::pair<std::string, std::string>> 
 // sql
 
 /* Execute SQL statement */
-   // rc = sqlite3_exec(db, sql, callback, nullptr, &zErrMsg);
-
     rc = sqlite3_exec(db, sql, callback, &vec, &zErrMsg);
     if (rc != SQLITE_OK) {
         fprintf(stderr, "SQL error: %s\n", zErrMsg);
