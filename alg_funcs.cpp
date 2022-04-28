@@ -17,3 +17,15 @@ std::vector<std::pair<std::string, std::string>> check(const std::string& gr, co
     mySelect(str.c_str(), vec);
     return vec;
 }
+
+std::vector<std::pair<std::string, std::string>> idSubj(const std::string& gr, const std::string& subj) {
+    std::vector<std::pair<std::string, std::string>> vec;
+    std::string str1 = "select ID from SCHEDULE as sch"
+                       " left join SUBJECT as subj on sch.SUBJECT_ID = subj.SUBJ_ID"
+                       " where GR_NAME != '";
+    std::string str2 = "' and subj.NAME = '";
+    std::string str3 = "'";
+    std::string str = str1 + gr + str2 + subj + str3;
+    mySelect(str.c_str(), vec);
+    return vec;
+}

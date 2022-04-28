@@ -31,4 +31,5 @@ CREATE TABLE PAIRS(
 
 "insert into SCHEDULE values (1, 'B05-001', 'Monday', 3, 2, 1, '318gk')";
 "insert into SCHEDULE values (2, 'B05-001', 'Monday', 4, 1, 2, '415gk')";
+"insert into SCHEDULE values (3, 'B05-002', 'Friday', 1, 2, 2, '320gk')"
 "select subj.NAME as sname, t.NAME as tname from SCHEDULE as sch left join TEACHERS as t on sch.TEACHER_ID = t.T_ID left join SUBJECT as subj on sch.SUBJECT_ID = subj.SUBJ_ID";
