@@ -29,3 +29,15 @@ std::vector<std::pair<std::string, std::string>> idSubj(const std::string& gr, c
     mySelect(str.c_str(), vec);
     return vec;
 }
+
+std::vector<std::pair<std::string, std::string>> getSch(const std::string& gr) {
+    std::vector<std::pair<std::string, std::string>> vec;
+    std::string str1 = "select DAY, PAIR_ID, subj.NAME, t.NAME as TNAME, t.EASINESS, CLASSROOM from SCHEDULE as sch"
+                       " left join SUBJECT as subj on sch.SUBJECT_ID = subj.SUBJ_ID"
+                       " left join TEACHERS as t on sch.TEACHER_ID = t.T_ID"
+                       " where sch.GR_NAME = '";
+    std::string str2 = "'";
+    std::string str = str1 + gr + str2;
+    mySelect(str.c_str(), vec);
+    return vec;
+}

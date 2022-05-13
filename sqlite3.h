@@ -3778,7 +3778,7 @@ SQLITE_API sqlite3_file *sqlite3_database_file_object(const char*);
 ** must be released by a corresponding call to sqlite3_free_filename(Y).
 **
 ** The P parameter in sqlite3_create_filename(D,J,W,N,P) should be an array
-** of 2*N pointers to strings.  Each pair of pointers in this array corresponds
+** of 2*N pointers to strings.  Each Pair of pointers in this array corresponds
 ** to a key and value for a query parameter.  The P parameter may be a NULL
 ** pointer if N is zero.  None of the 2*N pointers in the P array may be
 ** NULL pointers and key pointers should not be empty strings.
@@ -9655,7 +9655,7 @@ SQLITE_API int sqlite3_vtab_distinct(sqlite3_index_info*);
 ** </ol>
 **
 ** ^The sqlite3_vtab_in(P,N,F) interface can be invoked multiple times
-** within the same xBestIndex method call.  ^For any given P,N pair,
+** within the same xBestIndex method call.  ^For any given P,N Pair,
 ** the return value from sqlite3_vtab_in(P,N,F) will always be the same
 ** within the same xBestIndex call.  ^If the interface returns true
 ** (non-zero), that means that the constraint is an IN operator
@@ -12032,7 +12032,7 @@ SQLITE_API void sqlite3rebaser_delete(sqlite3_rebaser *p);
 ** In order to avoid this problem, instead of a single large buffer, input
 ** is passed to a streaming API functions by way of a callback function that
 ** the sessions module invokes to incrementally request input data as it is
-** required. In all cases, a pair of API function parameters such as
+** required. In all cases, a Pair of API function parameters such as
 **
 **  <pre>
 **  &nbsp;     int nChangeset,
@@ -12065,7 +12065,7 @@ SQLITE_API void sqlite3rebaser_delete(sqlite3_rebaser *p);
 **
 ** Similarly, streaming API functions that return changesets (or patchsets)
 ** return them in chunks by way of a callback function instead of via a
-** pointer to a single large buffer. In this case, a pair of parameters such
+** pointer to a single large buffer. In this case, a Pair of parameters such
 ** as:
 **
 **  <pre>

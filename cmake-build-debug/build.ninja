@@ -72,12 +72,6 @@ build CMakeFiles/great_project.dir/sqlite3.c.obj: C_COMPILER__great_project_Debu
   OBJECT_DIR = CMakeFiles\great_project.dir
   OBJECT_FILE_DIR = CMakeFiles\great_project.dir
 
-build CMakeFiles/great_project.dir/teacher.cpp.obj: CXX_COMPILER__great_project_Debug C$:/Users/Кирилл/CLionProjects/Shift/teacher.cpp || cmake_object_order_depends_target_great_project
-  DEP_FILE = CMakeFiles\great_project.dir\teacher.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  OBJECT_DIR = CMakeFiles\great_project.dir
-  OBJECT_FILE_DIR = CMakeFiles\great_project.dir
-
 build CMakeFiles/great_project.dir/alg_funcs.cpp.obj: CXX_COMPILER__great_project_Debug C$:/Users/Кирилл/CLionProjects/Shift/alg_funcs.cpp || cmake_object_order_depends_target_great_project
   DEP_FILE = CMakeFiles\great_project.dir\alg_funcs.cpp.obj.d
   FLAGS = -g -std=gnu++17
@@ -96,6 +90,18 @@ build CMakeFiles/great_project.dir/myNoSelect.cpp.obj: CXX_COMPILER__great_proje
   OBJECT_DIR = CMakeFiles\great_project.dir
   OBJECT_FILE_DIR = CMakeFiles\great_project.dir
 
+build CMakeFiles/great_project.dir/alg.cpp.obj: CXX_COMPILER__great_project_Debug C$:/Users/Кирилл/CLionProjects/Shift/alg.cpp || cmake_object_order_depends_target_great_project
+  DEP_FILE = CMakeFiles\great_project.dir\alg.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\great_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\great_project.dir
+
+build CMakeFiles/great_project.dir/mapSch.cpp.obj: CXX_COMPILER__great_project_Debug C$:/Users/Кирилл/CLionProjects/Shift/mapSch.cpp || cmake_object_order_depends_target_great_project
+  DEP_FILE = CMakeFiles\great_project.dir\mapSch.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\great_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\great_project.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target great_project
@@ -104,7 +110,7 @@ build CMakeFiles/great_project.dir/myNoSelect.cpp.obj: CXX_COMPILER__great_proje
 #############################################
 # Link the executable great_project.exe
 
-build great_project.exe: CXX_EXECUTABLE_LINKER__great_project_Debug CMakeFiles/great_project.dir/main.cpp.obj CMakeFiles/great_project.dir/sqlite3.c.obj CMakeFiles/great_project.dir/teacher.cpp.obj CMakeFiles/great_project.dir/alg_funcs.cpp.obj CMakeFiles/great_project.dir/mySelect.cpp.obj CMakeFiles/great_project.dir/myNoSelect.cpp.obj
+build great_project.exe: CXX_EXECUTABLE_LINKER__great_project_Debug CMakeFiles/great_project.dir/main.cpp.obj CMakeFiles/great_project.dir/sqlite3.c.obj CMakeFiles/great_project.dir/alg_funcs.cpp.obj CMakeFiles/great_project.dir/mySelect.cpp.obj CMakeFiles/great_project.dir/myNoSelect.cpp.obj CMakeFiles/great_project.dir/alg.cpp.obj CMakeFiles/great_project.dir/mapSch.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\great_project.dir
