@@ -7,7 +7,7 @@
 
 
 int main() {
-    std::map<std::string, std::vector<Pair>> mp = mapSch("B05-001");
+    /*std::map<std::string, std::vector<Pair>> mp = mapSch("B05-001");
     for(auto x : mp) {
         std::cout << x.first << ": " << std::endl;
         for(auto t : x.second) {
@@ -15,5 +15,12 @@ int main() {
             std::cout << std::endl;
         }
     }
-    return 0;
+     */
+
+    std::vector<Node> v = nSubj("B05-002", "TFS");
+    for(Node t : v) {
+        std::cout << t.id << " " << t.day << " " << t.pairID << " " << t.subj << " " << t.prep << " " << t.easy;
+        std::cout << std::endl;
+    }
+   return 0;
 }

@@ -11,13 +11,6 @@
 #include <stdlib.h>
 #include "alg_funcs.h"
 
-struct Pair {
-    std::string pairID;
-    std::string sName;
-    std::string tName;
-    float easy;
-    std::string room;
-};
 // возвращает словарь (день, вектор пар) для группы gr
 std::map<std::string, std::vector<Pair>> mapSch(const std::string& gr);
 
